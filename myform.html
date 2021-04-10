@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet"  href="style.css">
+  <link rel="stylesheet"  href="styleabout.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+        input[type=text], select, textarea {
+      width: 100%; 
+      padding: 12px; 
+      border: 1px solid #ccc; 
+      border-radius: 4px; 
+      box-sizing: border-box; 
+      margin-top: 6px; 
+      margin-bottom: 16px; 
+      resize: vertical 
+    }
+
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+      
+  header
+  {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("prague22.jpg");
+    background-size: cover;
+  }
+  header .backbtn
+  {
+
+    background-color: DodgerBlue; 
+    border: none; 
+    color: #fff; 
+    padding: 12px 16px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    text-transform: uppercase;
+    -webkit-appearance: button;
+     -moz-appearance: button;
+     appearance: button;
+  }
+  header.sticky .btn
+  {
+    color: #111;
+  }
+  header .backbtn:hover
+  {
+    color: black;
+  }
+  .content .box .text p
+  {
+    font-family: 
+  }
+
+  </style>
+
+</head>
+<body>
+  
+  <header>
+    <button class="backbtn" id="backbtn" ><i class="fa fa-home"></i> Home</button>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="current" href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#expert">Expert</a></li>
+      <li><a href="#box">Contact</a></li>
+    </ul>
+  </header>
+  <section class="userfeedback">
+          <h1 style="text-align: center; font-family: serif;">YOUR FEEDBACK MATTERS</h1>
+      <div class="container">
+        <form name="myform" action="index.html">
+
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="city"> Your City</label>
+          <select id="city" name="city">
+            <option value="Abbottabad">Abbottabad</option>
+            <option value="Faisalabad">Faisalabad</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Peshawar">Peshawar</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Quetta">Quetta</option>
+          </select>
+
+          <label for="subject">Feedback</label>
+          <textarea id="subject" name="subject" placeholder="Give Your Suggestions/Feedback.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit" onclick="showmessage()">
+
+        </form>
+      </div>
+
+    
+  </section>
+    	
+    	
+	
+
+
+      <script type="text/javascript">
+          
+          document.getElementById("backbtn").onclick = function () 
+              {
+                    location.href = "index.html";
+              };
+              
+          window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+          });
+
+          function showmessage()
+            {
+              var fname=document.myform.firstname.value;
+              var lname=document.myform.lastname.value;
+              var city=document.myform.city.value;
+              var msg=document.myform.subject.value;
+
+              if(fname==''||lname==''||city==''||msg=='')
+              {
+                alert("One of the required field is missing");
+
+              }
+              else
+              {
+                window.alert("Welcome "+fname+" "+lname+"\nFrom "+city+"\nYou say that '"+msg+"'\n\n  ---- We Weill improve our services Thanks For Your Time----");
+              }
+
+            }
+        </script>
+</body>
+</html>

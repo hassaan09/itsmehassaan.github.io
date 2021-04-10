@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+	<link rel="stylesheet"  href="style.css">
+	<link rel="stylesheet"  href="styleabout.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	header
+	{
+		background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("prague22.jpg");
+		background-size: cover;
+	}
+	header .backbtn
+	{
+
+	  background-color: DodgerBlue; 
+	  border: none; 
+	  color: #fff; 
+	  padding: 12px 16px; 
+	  font-size: 16px; 
+	  cursor: pointer; 
+	  text-transform: uppercase;
+	  -webkit-appearance: button;
+     -moz-appearance: button;
+   	 appearance: button;
+	}
+	header.sticky .btn
+	{
+		color: #111;
+	}
+	header .backbtn:hover
+	{
+		color: black;
+	}
+	.content .box .text p
+	{
+		font-family: 
+	}
+
+	</style>
+
+</head>
+<body>
+	
+	<header>
+		<button class="backbtn" id="backbtn" ><i class="fa fa-home"></i> Home</button>
+		<ul class="navigation">
+			<li><a href="index.html">Home</a></li>
+			<li><a class="current" href="#about">About</a></li>
+			<li><a href="#menu">Menu</a></li>
+		 	<li><a href="#expert">Expert</a></li>
+			<li><a href="#box">Contact</a></li>
+		</ul>
+	</header>
+	<section class="details" id="details">
+		<div class="content">
+			<h2>CEO Message</h2>
+			<br>
+			<h3><b>"</b>Our team members are a group of like minded people who aim at providing cutting edge features in the today's rapid growing digital world, that will not only cater the needs of new users, but will also aim at providing best features at the same time<b>"</b></h3>
+			
+		</div>		
+	</section>
+
+	
+
+
+	
+	<section class="expert" id="expert">
+		<div class="title">
+			<h2 class="titleText">Our<span>T</span>eam Members</h2>
+			<p>Our Best of the Best Tourist Guides have put in their effort to bulit this app and their exprties are well utilized</p>
+		</div>
+		<div class="content">
+			<div class="box">
+				<div class="imgBx">
+					<img src="ladygarden.jpeg">
+				</div>
+				<div class="text">
+					<h3>HASSAAN</h3><br>
+					<p><i>(CEO)</i></p>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx">
+					<img src="itguy.jpg">
+				</div>
+				<div class="text">
+					<h3>MOHSIN</h3><br>
+					<p><i>(IT Guy)</i></p>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx">
+					<img src="expert1.jfif">
+				</div>
+				<div class="text">
+					<h3>HASEEB</h3><br>
+					<p><i>(Reseacher)</i></p>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx">
+					<img src="expert2.jfif">
+				</div>
+				<div class="text">
+					<h3>JAMES</h3><br>
+					<p><i>(Tourism Expert)</i></p>
+				</div>
+			</div>	
+		</div>
+		</section>
+
+		<section>
+			<div class="title">
+				<a href="myform.html"><h2 class="titleText">Your<span>S</span>uggestions</h2></a>
+			</div>
+		</section>
+
+	<script type="text/javascript">
+		
+		document.getElementById("backbtn").onclick = function () 
+    		{
+          		location.href = "index.html";
+    		};
+    		
+
+
+    	
+    	
+
+		window.addEventListener('scroll', function(){
+			const header = document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+	</script>
+</body>
+</html>

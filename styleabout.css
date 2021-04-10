@@ -1,0 +1,50 @@
+
+/*h3
+{
+	color: 
+
+}*/
+.details
+{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(#e66465, #9198e5);
+	background-size: cover;
+	
+}
+.details .content
+{
+	max-width: 900px;
+	text-align: left;
+}
+.details .content h2
+{
+	font-size: 2em;
+	color: #ffd700;
+	
+}
+.details .content p
+{
+	font-size: 1em;
+	color: #fff;
+}
+.details .content h3
+{
+	
+	font-size: 23px;
+	letter-spacing: 2px;
+	color: #fff;
+	font-weight: 400;
+}
+
+.expert .content .box .text p
+{
+	color: #ff0157;
+	font-weight: bolder;	
+}
+
+
